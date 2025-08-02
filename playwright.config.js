@@ -22,7 +22,7 @@ export default defineConfig({
   projects: [
     {
       name: "Chromium",
-      use: { ...devices["Desktop Chrome"], trace: "retain-on-failure" },
+      use: { ...devices["Desktop Chrome"], trace: "on" },
     },
     {
       name: "Firefox",
@@ -34,11 +34,11 @@ export default defineConfig({
     },
     {
       name: "Mobile Chrome",
-      use: { ...devices["Pixel 5"] },
+      use: { ...devices["Pixel 5"], trace: "on" },
     },
     {
       name: "Mobile Safari",
-      use: { ...devices["iPhone 12"] },
+      use: { ...devices["iPhone 12"], trace: "on" },
     },
   ],
   reporter: [
