@@ -32,7 +32,7 @@ test.describe("SauceDemo Login Tests", () => {
       await loginPage.login(users.locked.username, users.locked.password);
       const errorMessage = await loginPage.getErrorMessage();
       expect(errorMessage).toContain("Sorry, this user has been locked out");
-      await expect(page).toHaveURL(/.*$/);
+       expect(page).toHaveURL(/.*$/);
     });
 
     test("Invalid credentials show error message", async ({ page }) => {
