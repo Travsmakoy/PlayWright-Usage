@@ -1,0 +1,24 @@
+{
+  "name": "saucedemo-refresher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "install:browsers": "playwright install",
+    "lint": "eslint tests/**/*.js",
+    "lint:fix": "eslint tests/**/*.js --fix"
+  },
+  "keywords": ["playwright", "testing", "automation", "e2e"],
+  "author": "",
+  "license": "ISC",
+  "description": "SauceDemo test automation framework using Playwright",
+  "devDependencies": {
+    "@playwright/test": "^1.54.2",
+    "@types/node": "^24.1.0",
+    "eslint": "^8.0.0"
+  }
+}
